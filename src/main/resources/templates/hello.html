@@ -1,0 +1,13 @@
+<!--템플릿 엔진으로 렌더링해야할 것은 /templates에 -->
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Hello</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+</head>
+<body>
+<p th:text="'안녕하세요. ' + ${data}">
+<!--    data는 HelloController의 attributeName과 mapping, attributeValue를 binding-->
+    안녕하세요. 손님</p>
+</body>
+</html>
